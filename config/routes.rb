@@ -40,7 +40,8 @@ Rails.application.routes.draw do
   # Comment routes
 
   # CREATE
-  get("/insert_comment_record", { :controller => "comments", :action => "create" })
+  post("/insert_comment_record", { :controller => "comments", :action => "create" })
+  #post("/associate_credentials", {:controller => "comments", :action => "associate })
 
   # DELETE
 
